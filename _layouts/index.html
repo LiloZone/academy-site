@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" >
+        <title>LILO.Academy</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="i/favicon.ico" type="image/x-icon">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,600,500,700,800,900|Roboto:100,200,300,400,500,600,700,800,900&amp;subset=latin" rel="stylesheet">
+        <!-- Bootstrap 4.3.1 CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <!--        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+        <!-- Slick 1.8.1 jQuery plugin CSS (Sliders) -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <!-- Fancybox 3 jQuery plugin CSS (Open images and video in popup) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <!-- AOS 2.3.4 jQuery plugin CSS (Animations) -->
+        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <!-- FontAwesome CSS -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <!-- Startup 3 CSS (Styles for all blocks) -->
+        <link href="css/style.css" rel="stylesheet" />
+        <!-- jQuery 3.3.1 -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head> 
+    <body>
+        <!-- Navigation Mobile type 1 -->
+
+        <a href="#" class="open_menu bg-light radius_full"><i class="fas fa-bars lh-40"></i></a>
+        <div class="navigation_mobile bg-dark type1">
+            <a href="#" class="close_menu color-white"><i class="fas fa-times"></i></a>
+            <div class="px-40 pt-60 pb-60 inner">
+                <div class="logo color-white mb-30"><img src="i/LiloAcademy_Logo_Preto2.png"></div>
+                <div><a href="#" class="f-heading f-22 link color-white mb-20">{{page.menuSobre}}</a></div>	
+                <div><a href="#" class="f-heading f-22 link color-white mb-20">{{page.menuProximos}}</a></div>	
+                <div><a href="#" class="f-heading f-22 link color-white mb-20">{{page.menuPiloto}}</a></div>	
+                <div><a href="#" class="f-heading f-22 link color-white mb-20">{{page.menuVideo}}</a></div>	
+                <div><a href="#" class="f-heading f-22 link color-white mb-20">{{page.menuContato}}</a></div>	
+                <!--
+<div><a href="#" class="link color-white op-3 mb-15">Help</a></div>
+<div><a href="#" class="link color-white op-3 mb-15">F.A.Q.</a></div>
+<div><a href="#" class="link color-white op-3 mb-15">Support</a></div>
+<div><a href="#" class="link color-white op-3 mb-15">About Us</a></div>
+-->
+                <div><a href="pt.html" class="link color-white op-3 mb-15">PT</a></div>
+                <div><a href="en.html" class="link color-white op-3 mb-15">EN</a></div>
+
+                <div class="socials mt-40">
+                    <a href="#" target="_blank" class="link color-white f-18 mr-20"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank" class="link color-white f-18 mr-20"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank" class="link color-white f-18 mr-20"><i class="fab fa-instagram"></i></a>
+                </div>
+
+                <div class="mt-50 f-14 light color-white op-3 copy">&copy; 2019</div>
+            </div>
+        </div>
+        <!-- Header 13 -->
+
+        <header class="pt-190 pb-130 bg-white color-filter-light-5 header_13">
+            <style>
+                .header_13{background-image:url(i/Patterns/LiloAcademy_Pattern_2.png);}
+                @media(-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi){
+                    .header_13{background-image:url(i/Patterns/LiloAcademy_Pattern_2.png);}
+                }
+            </style>
+
+            <!-- Header Menu 13 -->
+
+            <nav class="header_menu_13 pt-30 pb-30 mt-25">
+                <div class="container px-xl-0">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-10" data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
+                            <div class="row justify-content-between align-items-center">
+                                <div class="col-xl-2 color-white logo" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0"><img src="i/LiloAcademy_Logo_Preto2.png"></div>
+                                <div class="col-xl-8 text-center f-20 medium">
+                                    <a href="#sobre" class="link color-green mx-15"><strong>{{page.menuSobre}}</strong></a>
+                                    <a href="#projetos" class="link color-green mx-15"><strong>{{page.menuProximos}}</strong></a>
+                                    <a href="#especular" class="link color-green mx-15"><strong>{{page.menuPiloto}}</strong></a>
+                                    <a href="#video" class="link color-green mx-15"><strong>{{page.menuVideo}}</strong></a>
+                                    <a href="#contato" class="link color-green mx-15"><strong>{{page.menuContato}}</strong></a>
+                                </div>
+                                <div class="col-xl-2 text-right">
+                                    <a href="pt.html" class="btn sm action-1 f-16"><strong>PT</strong></a>
+                                    <a href="en.html" class="btn sm action-1 f-16"><strong>EN</strong></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container px-xl-0 text-center color-white">
+                <div class="mb-50 logo d-block d-xl-none color-white logo_mobile"><img src="i/LiloAcademy_Logo_Preto2.png"></div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
+                        <h1 class="text-uppercase color-main">{{page.headerTitulo1}}<br /> {{page.headerTitulo2}}</h1>
+                    </div>
+                    <div class="col-lg-6" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+                        <div class="mt-30 f-28 text-adaptive color-main">
+                            {{page.headerTexto}} 				
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Próximos Projetos -->
+
+        <section id="projetos" class="pt-100 pb-100 bg-light ecommerce_26">
+            <style>
+                .ecommerce_26{background-image:url(i/Patterns/LiloAcademy_BG.jpg);}
+                @media(-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi){
+                    .ecommerce_26{background-image:url(i/Patterns/LiloAcademy_BG.jpg);}
+                }
+            </style>
+            <div class="container px-xl-0">
+                <div class="row justify-content-center text-center">
+                    <div class="col-xl-7">
+                        <h2 class="mb-30 small text-uppercase color-black" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">{{page.projetosTitulo}}</h2>
+                        <div class="color-main f-18 medium text-adaptive" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+                            {{page.projetosP1}}<br /> {{page.projetosP2}}
+                        </div>
+                        <span data-aos-duration="600" data-aos="fade-down" data-aos-delay="600"><a data-toggle="modal" data-target="#embreve" class="mt-45 btn lg action-2 px-lg-4 main_btn text-uppercase">{{page.projetosBotao}}</a></span>			
+                    </div>
+                </div>
+                <div class="mt-45 row justify-content-center color-white products">
+                    <div class="col-lg-4 col-md-7 col-sm-10 d-lg-flex flex-wrap align-items-stretch">
+                        <div class="mt-30 relative product big" data-aos-duration="600" data-aos="fade-down" data-aos-delay="450">
+                            <img src="i/projetos/projeto.png" class="w-full h-full" alt="" />
+                            <div class="absolute pt-25 pb-25 px-30 w-full h-full op-0 d-flex flex-column justify-content-between inner">
+                                <div class="top">
+                                    <div class="mb-10 f-24 bold text-uppercase sp-20 title"><h3>Criando traças</h3></div>
+                                    <div class="text-adaptive">Destruindo e reconstruindo imagens digital, analogica e biologicamente</div>
+                                </div>
+                                <div class="mt-20 d-flex flex-wrap justify-content-between align-items-baseline bottom">
+                                    <a data-toggle="modal" data-target="#embreve" class="btn sm action-3 medium f-16">Participe</a>
+                                    <div class="f-18 medium price">R$ 900</div>
+                                </div>
+                            </div>
+                        </div>				
+                    </div>
+
+                    <div class="col-lg-4 col-md-7 col-sm-10 d-lg-flex flex-wrap align-items-stretch">
+                        <div class="mt-30 relative product big" data-aos-duration="600" data-aos="fade-down" data-aos-delay="450">
+                            <img src="i/projetos/projeto.png" class="w-full h-full" alt="" />
+                            <div class="absolute pt-25 pb-25 px-30 w-full h-full op-0 d-flex flex-column justify-content-between inner">
+                                <div class="top">
+                                    <div class="mb-10 f-24 bold text-uppercase sp-20 title"><h3>Orquestra Simbiótica</h3></div>
+                                    <div class="text-adaptive">Fungos e bactérias cantantes</div>
+                                </div>
+                                <div class="mt-20 d-flex flex-wrap justify-content-between align-items-baseline bottom">
+                                    <a data-toggle="modal" data-target="#embreve" class="btn sm action-3 medium f-16">Participe</a>
+                                    <div class="f-18 medium price">R$ 900</div>
+                                </div>
+                            </div>
+                        </div>				
+                    </div>
+
+                    <div class="col-lg-4 col-md-7 col-sm-10 d-lg-flex flex-wrap align-items-stretch">
+                        <div class="mt-30 relative product big" data-aos-duration="600" data-aos="fade-down" data-aos-delay="450">
+                            <img src="i/projetos/projeto.png" class="w-full h-full" alt="" />
+                            <div class="absolute pt-25 pb-25 px-30 w-full h-full op-0 d-flex flex-column justify-content-between inner">
+                                <div class="top">
+                                    <div class="mb-10 f-24 bold text-uppercase sp-20 title"><h3>Repositório <br /> Good Vibes</h3></div>
+                                    <div class="text-adaptive">Não sabe o que fazer com o seu vibrador quebrado?</div>
+                                </div>
+                                <div class="mt-20 d-flex flex-wrap justify-content-between align-items-baseline bottom">
+                                    <a data-toggle="modal" data-target="#embreve" class="btn sm action-3 medium f-16">Participe</a>
+                                    <div class="f-18 medium price">R$ 900</div>
+                                </div>
+                            </div>
+                        </div>				
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-7 col-sm-10 d-lg-flex flex-wrap align-items-stretch">
+                        <div class="mt-30 relative product big" data-aos-duration="600" data-aos="fade-down" data-aos-delay="450">
+                            <img src="i/projetos/projeto.png" class="w-full h-full" alt="" />
+                            <div class="absolute pt-25 pb-25 px-30 w-full h-full op-0 d-flex flex-column justify-content-between inner">
+                                <div class="top">
+                                    <div class="mb-10 f-24 bold text-uppercase sp-20 title"><h3>Criando traças</h3></div>
+                                    <div class="text-adaptive">Destruindo e reconstruindo imagens digital, analogica e biologicamente</div>
+                                </div>
+                                <div class="mt-20 d-flex flex-wrap justify-content-between align-items-baseline bottom">
+                                    <a data-toggle="modal" data-target="#embreve" class="btn sm action-3 medium f-16">Participe</a>
+                                    <div class="f-18 medium price">R$ 900</div>
+                                </div>
+                            </div>
+                        </div>				
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-7 col-sm-10 d-lg-flex flex-wrap align-items-stretch">
+                        <div class="mt-30 relative product big" data-aos-duration="600" data-aos="fade-down" data-aos-delay="450">
+                            <img src="i/projetos/projeto.png" class="w-full h-full" alt="" />
+                            <div class="absolute pt-25 pb-25 px-30 w-full h-full op-0 d-flex flex-column justify-content-between inner">
+                                <div class="top">
+                                    <div class="mb-10 f-24 bold text-uppercase sp-20 title"><h3>Orquestra Simbiótica</h3></div>
+                                    <div class="text-adaptive">Fungos e bactérias cantantes</div>
+                                </div>
+                                <div class="mt-20 d-flex flex-wrap justify-content-between align-items-baseline bottom">
+                                    <a data-toggle="modal" data-target="#embreve" class="btn sm action-3 medium f-16">Participe</a>
+                                    <div class="f-18 medium price">R$ 900</div>
+                                </div>
+                            </div>
+                        </div>				
+                    </div>
+
+                    <div class="col-lg-4 col-md-7 col-sm-10 d-lg-flex flex-wrap align-items-stretch">
+                        <div class="mt-30 relative product big" data-aos-duration="600" data-aos="fade-down" data-aos-delay="450">
+                            <img src="i/projetos/projeto.png" class="w-full h-full" alt="" />
+                            <div class="absolute pt-25 pb-25 px-30 w-full h-full op-0 d-flex flex-column justify-content-between inner">
+                                <div class="top">
+                                    <div class="mb-10 f-24 bold text-uppercase sp-20 title"><h3>Repositório <br /> Good Vibes</h3></div>
+                                    <div class="text-adaptive">Não sabe o que fazer com o seu vibrador quebrado?</div>
+                                </div>
+                                <div class="mt-20 d-flex flex-wrap justify-content-between align-items-baseline bottom">
+                                    <a data-toggle="modal" data-target="#embreve" class="btn sm action-3 medium f-16">Participe</a>
+                                    <div class="f-18 medium price">R$ 900</div>
+                                </div>
+                            </div>
+                        </div>				
+                    </div>
+
+                </div>
+            </div>
+            
+            <div id="embreve" class="modal in" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title f-40 text-uppercase text-center black">Em breve</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+        </section>
+
+        <!-- About -->
+
+        <section id="sobre" class="pt-120 pb-105 bg-dark color-filter-light-6 content_5">
+            <style>
+                .content_5{background-image:url(i/Patterns/LiloAcademy_Pattern_4.jpg);}
+                @media(-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi){
+                    .content_5{background-image:url(i/Patterns/LiloAcademy_Pattern_4.jpg);}
+                }
+            </style>
+            <div class="container px-xl-0">
+                <div class="row justify-content-center text-center color-black">
+                    <div class="col-lg-8">
+                        <div class="f-14 semibold sp-20" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">{{page.sobre}}</div>
+                        <h2 class="mt-30 text-uppercase" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">{{page.sobreTitulo1}}<br /> {{page.sobreTitulo1}}</h2>
+                        <div class="mt-35 f-24 medium op-7 text-adaptive color-black">
+                            <span data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">					
+                                {{page.sobreTexto}}
+                            </span>					
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Content 19 -->
+
+        <section class="pt-105 pb-90 bg-light content_19">
+            <style>
+                .content_19{background-image:url(i/Patterns/LiloAcademy_BG_2.jpg);}
+                @media(-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi){
+                    .content_19{background-image:url(i/Patterns/LiloAcademy_BG_2.jpg);}
+                }
+            </style>
+            <div class="container px-xl-0">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10 col-lg-11">
+                        <h2 class="small text-left text-lg-center text-uppercase" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">{{page.sobreAprendizagemTitulo}}</h2>
+                        <div class="row">
+                            <div class="col-lg-6 mt-45 block pr-80" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+                                <div class="f-heading medium f-18 title">{{page.sobreAprendizagemQ1}}</div>
+                                <div class="mt-10 color-heading text-adaptive">
+                                    {{page.sobreAprendizagemR1}}
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mt-45 block" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+                                <div class="f-heading medium f-18 title">{{page.sobreAprendizagemQ2}}</div>
+                                <div class="mt-10 color-heading text-adaptive">
+                                    {{page.sobreAprendizagemR2}}
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mt-45 block pr-80" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+                                <div class="f-heading medium f-18 title">{{page.sobreAprendizagemQ3}}</div>
+                                <div class="mt-10 color-heading text-adaptive">
+                                    {{page.sobreAprendizagemR3}}						
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mt-45 block" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+                                <div class="f-heading medium f-18 title">{{page.sobreAprendizagemQ4}}</div>
+                                <div class="mt-10 color-heading text-adaptive">
+                                    {{page.sobreAprendizagemR4}}
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mt-45 block pr-80" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+                                <div class="f-heading medium f-18 title">{{page.sobreAprendizagemQ5}}</div>
+                                <div class="mt-10 color-heading text-adaptive">
+                                    {{page.sobreAprendizagemR5}}
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mt-45 block" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+                                <div class="f-heading medium f-18 title">{{page.sobreAprendizagemQ6}}</div>
+                                <div class="mt-10 color-heading text-adaptive">
+                                    {{page.sobreAprendizagemR6}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Especular - Piloto -->
+
+        <section id="especular" class="pt-105 pb-100 bg-dark showcase_5">
+            <div class="container px-xl-0">
+                <div class="row justify-content-center text-center color-white">
+                    <div class="col-xl-9 col-lg-10">
+                        <h2 class="small text-uppercase" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">{{page.pilotoTitulo}}</h2>
+                        <div class="mt-25 mb-40 f-22 text-adaptive" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+                            <i>{{page.pilotoP1}}</i>
+                        </div>
+                        <div class="mt-25 mb-40 f-22 text-adaptive" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+                            <strong>{{page.pilotoP2}}</strong>
+                        </div>
+                        <div class="mt-25 mb-40 f-22 text-adaptive" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+                            {{page.pilotoP3}}
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center text-center text-md-left">
+                    <div class="mt-30 col-xl-4 col-md-6 col-sm-8" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
+                        <video src="i/especular/video1.mp4" autoplay muted loop type="video/mp4" class="radius10 w-full" alt="" />
+                    </div>
+                    <div class="mt-30 col-xl-4 col-md-6 col-sm-8" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+                        <video src="i/especular/video2.mp4" autoplay muted loop type="video/mp4" class="radius10 w-full" alt="" />
+                    </div>
+                    <div class="mt-30 col-xl-4 col-md-6 col-sm-8" data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
+                        <video src="i/especular/video3.mp4" autoplay muted loop type="video/mp4" class="radius10 w-full" alt="" />
+                    </div>
+
+                    <div class="col-xl-10 col-lg-12 col-md-10" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
+                        <h2 class="mb-35 small color-white text-center pt-50">{{page.pilotoEquipes}}</h2>
+                    </div>
+
+                    <div class="mt-30 col-xl-3 col-md-6 col-sm-8" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
+                        <img src="i/especular/1.jpg" class="radius10 noradius_bottom w-full" alt="" />
+                        <div class="px-30 pt-20 pb-30 bg-white radius10 noradius_top inner">
+                            <div class="mb-10 f-22 title">{{page.pilotoEquipe1}}</div>
+                            <div class="color-heading text-adaptive text-left">
+                                <ul>
+                                    <li>{{page.pilotoEquipe1_1}}</li>
+                                    <li>{{page.pilotoEquipe1_2}}</li>
+                                    <li>{{page.pilotoEquipe1_3}}</li>
+                                    <li>{{page.pilotoEquipe1_4}}</li>
+                                    <li>{{page.pilotoEquipe1_5}}</li>
+                                </ul>					</div>
+                            <a data-toggle="modal" data-target="#estrutura" class="mt-20 btn sm border-gray color-main">{{page.pilotoBotao}}</a>
+                        </div>
+                    </div>
+
+                    <div id="estrutura" class="modal in" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title f-40 text-uppercase text-center black">{{page.modal1Titulo}}</h4>
+                                </div>
+                                <div class="modal-body pl-30 pr-30">
+                                    <img src="#" class="top35 bottom35 width_full" alt="" />
+                                    <p class="f-18 black"><strong>{{page.modalEspecialistaTitulo}}:</strong> {{page.modal1Especialista}}</p>
+                                    <p class="f-18">---</p>
+                                    <p class="f-18 black"><strong>{{page.modalAtividadesTitulo}}:</strong> {{page.modal1Atividades}}</p>
+                                    <p class="f-18">---</p>
+                                    <ul>
+                                        <li>{{page.modal1_1}}</li>
+                                        <li>{{page.modal1_2}}</li>
+                                        <li>{{page.modal1_3}}</li>
+                                        <li>{{page.modal1_4}}</li>
+                                        <li>{{page.modal1_5}}</li>
+                                        <li>{{page.modal1_6}}</li>
+                                    </ul> 
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn sm border-gray color-main" data-toggle="modal" data-target="#redes" data-dismiss="modal">{{page.modalAnterior}}</button>
+                                    <button type="button" class="btn sm border-gray color-main" data-toggle="modal" data-target="#coerenciavisual" data-dismiss="modal">{{page.modalProximo}}</button>
+                                    <button type="button" class="btn sm border-gray color-main" data-dismiss="modal">X</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-30 col-xl-3 col-md-6 col-sm-8" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+                        <img src="i/especular/2.jpg" class="radius10 noradius_bottom w-full" alt="" />
+                        <div class="px-30 pt-20 pb-30 bg-white radius10 noradius_top inner">
+                            <div class="mb-10 f-22 title">{{page.pilotoEquipe2}}</div>
+                            <div class="color-heading text-adaptive text-left">
+                                <ul>
+                                    <li>{{page.pilotoEquipe2_1}}</li>
+                                    <li>{{page.pilotoEquipe2_2}}</li>
+                                    <li>{{page.pilotoEquipe2_3}}</li>
+                                    <li>{{page.pilotoEquipe2_4}}</li>
+                                    <li>{{page.pilotoEquipe2_5}}</li>
+                                </ul>    
+                            </div>
+                            <a data-toggle="modal" data-target="#coerenciavisual" class="mt-20 btn sm border-gray color-main">{{page.pilotoBotao}}</a>
+                        </div>
+                    </div>
+                    
+                    <div id="coerenciavisual" class="modal in" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title f-40 text-uppercase text-center black">{{page.modal2Titulo}}</h4>
+                                </div>
+                                <div class="modal-body pl-30 pr-30">
+                                    <img src="#" class="top35 bottom35 width_full" alt="" />
+                                    <p class="f-18 black"><strong>{{page.modalEspecialistaTitulo}}:</strong> {{page.modal2Especialista}}</p>
+                                    <p class="f-18">---</p>
+                                    <p class="f-18 black"><strong>{{page.modalAtividadesTitulo}}:</strong> {{page.modal2Atividades}}</p>
+                                    <p class="f-18">---</p>
+                                    <ul>
+                                        <li>{{page.modal2_1}}</li>
+                                        <li>{{page.modal2_2}}</li>
+                                        <li>{{page.modal2_3}}</li>
+                                        <li>{{page.modal2_4}}</li>
+                                        <li>{{page.modal2_5}}</li>
+                                        <li>{{page.modal2_6}}</li>
+                                    </ul> 
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn sm border-gray color-main" data-toggle="modal" data-target="#estrutura" data-dismiss="modal">{{page.modalAnterior}}</button>
+                                    <button type="button" class="btn sm border-gray color-main" data-toggle="modal" data-target="#eletronica" data-dismiss="modal">{{page.modalProximo}}</button>
+                                    <button type="button" class="btn sm border-gray color-main" data-dismiss="modal">X</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-30 col-xl-3 col-md-6 col-sm-8" data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
+                        <img src="i/especular/3.jpg" class="radius10 noradius_bottom w-full" alt="" />
+                        <div class="px-30 pt-20 pb-30 bg-white radius10 noradius_top inner">
+                            <div class="mb-10 f-22 title">{{page.pilotoEquipe3}}</div>
+                            <div class="color-heading text-adaptive text-left">
+                                <ul>
+                                    <li>{{page.pilotoEquipe3_1}}</li>
+                                    <li>{{page.pilotoEquipe3_2}}</li>
+                                    <li>{{page.pilotoEquipe3_3}}</li>
+                                </ul>    
+                            </div>
+                            <a data-toggle="modal" data-target="#eletronica" class="mt-20 btn sm border-gray color-main">{{page.pilotoBotao}}</a>
+                        </div>
+                    </div>
+                    
+                    <div id="eletronica" class="modal in" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title f-40 text-uppercase text-center black">{{page.modal3Titulo}}</h4>
+                                </div>
+                                <div class="modal-body pl-30 pr-30">
+                                    <img src="#" class="top35 bottom35 width_full" alt="" />
+                                    <p class="f-18 black"><strong>{{page.modalEspecialistaTitulo}}:</strong> {{page.modal3Especialista}}</p>
+                                    <p class="f-18">---</p>
+                                    <p class="f-18 black"><strong>{{page.modalAtividadesTitulo}}:</strong> {{page.modal3Atividades}}</p>
+                                    <p class="f-18">---</p>
+                                    <ul>
+                                        <li>{{page.modal3_1}}</li>
+                                        <li>{{page.modal3_2}}</li>
+                                        <li>{{page.modal3_3}}</li>
+                                        <li>{{page.modal3_4}}</li>
+                                        <li>{{page.modal3_5}}</li>
+                                        <li>{{page.modal3_6}}</li>
+                                    </ul> 
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn sm border-gray color-main" data-toggle="modal" data-target="#coerenciavisual" data-dismiss="modal">{{page.modalAnterior}}</button>
+                                    <button type="button" class="btn sm border-gray color-main" data-toggle="modal" data-target="#redes" data-dismiss="modal">{{page.modalProximo}}</button>
+                                    <button type="button" class="btn sm border-gray color-main" data-dismiss="modal">X</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-30 col-xl-3 col-md-6 col-sm-8" data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
+                        <img src="i/especular/4.jpg" class="radius10 noradius_bottom w-full" alt="" />
+                        <div class="px-30 pt-20 pb-30 bg-white radius10 noradius_top inner">
+                            <div class="mb-10 f-22 title">{{page.pilotoEquipe4}}</div>
+                            <div class="color-heading text-adaptive text-left">
+                                <ul>
+                                    <li>{{page.pilotoEquipe4_1}}</li>
+                                    <li>{{page.pilotoEquipe4_2}}</li>
+                                    <li>{{page.pilotoEquipe4_3}}</li>
+                                    <li>{{page.pilotoEquipe4_4}}</li>
+                                </ul>    
+                            </div>
+                            <a data-toggle="modal" data-target="#redes" class="mt-20 btn sm border-gray color-main">{{page.pilotoBotao}}</a>
+                        </div>
+                    </div>
+                    
+                    <div id="redes" class="modal in" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title f-40 text-uppercase text-center black">{{page.modal4Titulo}}</h4>
+                                </div>
+                                <div class="modal-body pl-30 pr-30">
+                                    <img src="#" class="top35 bottom35 width_full" alt="" />
+                                    <p class="f-18 black"><strong>{{page.modalEspecialistaTitulo}}:</strong> {{page.modal4Especialista}}</p>
+                                    <p class="f-18">---</p>
+                                    <p class="f-18 black"><strong>{{page.modalAtividadesTitulo}}:</strong> {{page.modal4Atividades}}</p>
+                                    <p class="f-18">---</p>
+                                    <ul>
+                                        <li>{{page.modal4_1}}</li>
+                                        <li>{{page.modal4_2}}</li>
+                                        <li>{{page.modal4_3}}</li>
+                                        <li>{{page.modal4_4}}</li>
+                                        <li>{{page.modal4_5}}</li>
+                                        <li>{{page.modal4_6}}</li>
+                                    </ul> 
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn sm border-gray color-main" data-toggle="modal" data-target="#eletronica" data-dismiss="modal">{{page.modalAnterior}}</button>
+                                    <button type="button" class="btn sm border-gray color-main" data-toggle="modal" data-target="#estrutura" data-dismiss="modal">{{page.modalProximo}}</button>
+                                    <button type="button" class="btn sm border-gray color-main" data-dismiss="modal">X</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Propaganda -->
+
+        <section id="video" class="pt-100 pb-100 bg-light color-main text-center color-filter-light-5 call_to_action_22">
+            <style>
+                .call_to_action_22{background-image:url(i/Patterns/LiloAcademy_Pattern_4.png);}
+                @media(-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi){
+                    .call_to_action_22{background-image:url(i/Patterns/LiloAcademy_Pattern_4.png);}
+                }
+            </style>
+
+            <div class="container px-xl-0">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 col-lg-10">
+                        <div class="radius20 pt-55 pb-50 px-20 inner">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-10 col-md-8">
+                                    <h2 class="small" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">{{page.videoChamada}}</h2>
+                                    <div data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+                                        <a href="https://www.youtube.com/embed/RcTFVcoibI0?rel=0&showinfo=0" target="_blank" data-fancybox="call_to_action_22_fancybox" class="mt-35 mb-40 play relative white"><i class="fas fa-play"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-8" data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
+                                    <div class="f-22 text-adaptive color-black">
+                                        {{page.videoChamada2}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+
+        <section id="contato" class="bg-light contact_8">
+            <div class="container px-xl-0">
+                <div class="row justify-content-between">
+                    <div class="col-md-6 pt-95 pb-95 left_side">
+                        <div class="row">
+                            <div class="col-lg-10">
+                                <div class="f-24 bold" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">LILO.Academy</div>
+                                <div class="mt-10 mb-75 f-22 color-heading text-adaptive" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+                                    {{page.contatoChamada}}
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
+                            <div class="mb-10 f-14 semibold text-uppercase sp-20 color-heading title">{{page.contatoFone}}</div>
+                            <a href="tel:+55 11 948 997 972" class="mb-35 link f-42 bold color-main text_big">+55 11 948 997 972</a>
+                        </div>
+                        <div data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+                            <div class="mb-10 f-14 semibold text-uppercase sp-20 color-heading title">{{page.contatoEmail}}</div>
+                            <a href="mailto:academy@lilo.zone" class="mb-35 link f-42 bold color-main text_big">academy@lilo.zone</a>
+                        </div>
+                        <div data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
+                            <div class="mb-10 f-14 semibold text-uppercase sp-20 color-heading title">{{page.contatoEndereco}}</div>
+                            <div class="f-42 bold color-main text_big">R. João Moura, 2152 - Pinheiros, São Paulo - SP, 05412-004, Brasil</div>
+                        </div>
+                    </div>
+                    <div class="col-md-5" data-aos-duration="600" data-aos="fade-down" data-aos-delay="900">
+                        <div class="absolute h-full js-google-map" 
+                             data-marker="i/map-pin-red.png"
+                             data-marker-size="30*40"
+                             data-coords="-23.550082,-46.687435"
+                             data-zoom="18"
+                             ></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer 8 -->
+
+        <footer class="pt-45 pb-45 bg-dark color-white text-center footer_8">
+            <div class="container px-xl-0">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-3 text-xl-left" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+                        <a href="#" class="logo link color-white">LILO.Academy</a>
+                    </div>
+                    <div class="mt-10 mb-10 my-xl-0 col-xl-6 lh-40" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
+                        <a href="{{page.linkZone}}" class="f-14 text-uppercase sp-20 link color-white mr-15">LILO.ZONE</a>
+                        <a href="{{page.linkBlog}}" class="f-14 text-uppercase sp-20 link color-white mx-15">Blog</a>
+                    </div>
+                    <div class="col-lg-3 text-xl-right socials" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+                        <a href="#" class="mr-15 w-40 btn sm border-transparent-white px-0"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="mx-15 w-40 btn sm border-transparent-white px-0"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="ml-15 w-40 btn sm border-transparent-white px-0"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- forms alerts -->
+        <div class="alert alert-success alert-dismissible fixed-top alert-form-success" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            Thanks for your message!
+        </div>
+        <div class="alert alert-warning alert-dismissible fixed-top alert-form-check-fields" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            Please, fill in required fields.
+        </div>
+        <div class="alert alert-danger alert-dismissible fixed-top alert-form-error" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            An error occurred while sending data :(
+        </div>
+
+        <!-- Bootstrap 4.3.1 JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+        <!-- Fancybox 3 jQuery plugin JS (Open images and video in popup) -->
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <!-- Google maps JS API -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDP6Ex5S03nvKZJZSvGXsEAi3X_tFkua4U"></script>
+        <!-- Slick 1.8.1 jQuery plugin JS (Sliders) -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!-- AOS 2.3.4 jQuery plugin JS (Animations) -->
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <!-- Maskedinput jQuery plugin JS (Masks for input fields) -->
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <!-- Startup 3 JS (Custom js for all blocks) -->
+        <script src="js/script.js"></script>
+
+    </body>
+</html>
