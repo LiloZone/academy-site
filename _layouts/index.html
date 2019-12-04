@@ -123,103 +123,30 @@
                         <span data-aos-duration="600" data-aos="fade-down" data-aos-delay="600"><a data-toggle="modal" data-target="#embreve" class="mt-45 btn lg action-2 px-lg-4 main_btn text-uppercase">{{page.projetosBotao}}</a></span>			
                     </div>
                 </div>
+                
                 <div class="mt-45 row justify-content-center color-white products">
+                    {% for projetos in site.data.projetos %}
                     <div class="col-lg-4 col-md-7 col-sm-10 d-lg-flex flex-wrap align-items-stretch">
                         <div class="mt-30 relative product big" data-aos-duration="600" data-aos="fade-down" data-aos-delay="450">
                             <img src="i/projetos/projeto.png" class="w-full h-full" alt="" />
                             <div class="absolute pt-25 pb-25 px-30 w-full h-full op-0 d-flex flex-column justify-content-between inner">
                                 <div class="top">
-                                    <div class="mb-10 f-24 bold text-uppercase sp-20 title"><h3>Criando traças</h3></div>
-                                    <div class="text-adaptive">Destruindo e reconstruindo imagens digital, analogica e biologicamente</div>
+                                    {% if page.url contains 'en' %}
+                                    <div class="mb-10 f-24 bold text-uppercase sp-20 title"><h3>{{projetos.nomeEN}}</h3></div>
+                                    <div class="text-adaptive">{{projetos.taglineEN}}</div>
+                                    {% else %}
+                                    <div class="mb-10 f-24 bold text-uppercase sp-20 title"><h3>{{projetos.nomePT}}</h3></div>
+                                    <div class="text-adaptive">{{projetos.taglinePT}}</div>
+                                    {% endif %}
                                 </div>
                                 <div class="mt-20 d-flex flex-wrap justify-content-between align-items-baseline bottom">
-                                    <a data-toggle="modal" data-target="#embreve" class="btn sm action-3 medium f-16">Participe</a>
-                                    <div class="f-18 medium price">R$ 900</div>
+                                    <a data-toggle="modal" data-target="#embreve" class="btn sm action-3 medium f-16">{{page.projetosBotao}}</a>
+                                    <div class="f-18 medium price">{{projetos.valorRS}}</div>
                                 </div>
                             </div>
-                        </div>				
+                        </div>	
                     </div>
-
-                    <div class="col-lg-4 col-md-7 col-sm-10 d-lg-flex flex-wrap align-items-stretch">
-                        <div class="mt-30 relative product big" data-aos-duration="600" data-aos="fade-down" data-aos-delay="450">
-                            <img src="i/projetos/projeto.png" class="w-full h-full" alt="" />
-                            <div class="absolute pt-25 pb-25 px-30 w-full h-full op-0 d-flex flex-column justify-content-between inner">
-                                <div class="top">
-                                    <div class="mb-10 f-24 bold text-uppercase sp-20 title"><h3>Orquestra Simbiótica</h3></div>
-                                    <div class="text-adaptive">Fungos e bactérias cantantes</div>
-                                </div>
-                                <div class="mt-20 d-flex flex-wrap justify-content-between align-items-baseline bottom">
-                                    <a data-toggle="modal" data-target="#embreve" class="btn sm action-3 medium f-16">Participe</a>
-                                    <div class="f-18 medium price">R$ 900</div>
-                                </div>
-                            </div>
-                        </div>				
-                    </div>
-
-                    <div class="col-lg-4 col-md-7 col-sm-10 d-lg-flex flex-wrap align-items-stretch">
-                        <div class="mt-30 relative product big" data-aos-duration="600" data-aos="fade-down" data-aos-delay="450">
-                            <img src="i/projetos/projeto.png" class="w-full h-full" alt="" />
-                            <div class="absolute pt-25 pb-25 px-30 w-full h-full op-0 d-flex flex-column justify-content-between inner">
-                                <div class="top">
-                                    <div class="mb-10 f-24 bold text-uppercase sp-20 title"><h3>Repositório <br /> Good Vibes</h3></div>
-                                    <div class="text-adaptive">Não sabe o que fazer com o seu vibrador quebrado?</div>
-                                </div>
-                                <div class="mt-20 d-flex flex-wrap justify-content-between align-items-baseline bottom">
-                                    <a data-toggle="modal" data-target="#embreve" class="btn sm action-3 medium f-16">Participe</a>
-                                    <div class="f-18 medium price">R$ 900</div>
-                                </div>
-                            </div>
-                        </div>				
-                    </div>
-                    
-                    <div class="col-lg-4 col-md-7 col-sm-10 d-lg-flex flex-wrap align-items-stretch">
-                        <div class="mt-30 relative product big" data-aos-duration="600" data-aos="fade-down" data-aos-delay="450">
-                            <img src="i/projetos/projeto.png" class="w-full h-full" alt="" />
-                            <div class="absolute pt-25 pb-25 px-30 w-full h-full op-0 d-flex flex-column justify-content-between inner">
-                                <div class="top">
-                                    <div class="mb-10 f-24 bold text-uppercase sp-20 title"><h3>Criando traças</h3></div>
-                                    <div class="text-adaptive">Destruindo e reconstruindo imagens digital, analogica e biologicamente</div>
-                                </div>
-                                <div class="mt-20 d-flex flex-wrap justify-content-between align-items-baseline bottom">
-                                    <a data-toggle="modal" data-target="#embreve" class="btn sm action-3 medium f-16">Participe</a>
-                                    <div class="f-18 medium price">R$ 900</div>
-                                </div>
-                            </div>
-                        </div>				
-                    </div>
-                    
-                    <div class="col-lg-4 col-md-7 col-sm-10 d-lg-flex flex-wrap align-items-stretch">
-                        <div class="mt-30 relative product big" data-aos-duration="600" data-aos="fade-down" data-aos-delay="450">
-                            <img src="i/projetos/projeto.png" class="w-full h-full" alt="" />
-                            <div class="absolute pt-25 pb-25 px-30 w-full h-full op-0 d-flex flex-column justify-content-between inner">
-                                <div class="top">
-                                    <div class="mb-10 f-24 bold text-uppercase sp-20 title"><h3>Orquestra Simbiótica</h3></div>
-                                    <div class="text-adaptive">Fungos e bactérias cantantes</div>
-                                </div>
-                                <div class="mt-20 d-flex flex-wrap justify-content-between align-items-baseline bottom">
-                                    <a data-toggle="modal" data-target="#embreve" class="btn sm action-3 medium f-16">Participe</a>
-                                    <div class="f-18 medium price">R$ 900</div>
-                                </div>
-                            </div>
-                        </div>				
-                    </div>
-
-                    <div class="col-lg-4 col-md-7 col-sm-10 d-lg-flex flex-wrap align-items-stretch">
-                        <div class="mt-30 relative product big" data-aos-duration="600" data-aos="fade-down" data-aos-delay="450">
-                            <img src="i/projetos/projeto.png" class="w-full h-full" alt="" />
-                            <div class="absolute pt-25 pb-25 px-30 w-full h-full op-0 d-flex flex-column justify-content-between inner">
-                                <div class="top">
-                                    <div class="mb-10 f-24 bold text-uppercase sp-20 title"><h3>Repositório <br /> Good Vibes</h3></div>
-                                    <div class="text-adaptive">Não sabe o que fazer com o seu vibrador quebrado?</div>
-                                </div>
-                                <div class="mt-20 d-flex flex-wrap justify-content-between align-items-baseline bottom">
-                                    <a data-toggle="modal" data-target="#embreve" class="btn sm action-3 medium f-16">Participe</a>
-                                    <div class="f-18 medium price">R$ 900</div>
-                                </div>
-                            </div>
-                        </div>				
-                    </div>
-
+                    {% endfor %}
                 </div>
             </div>
             
