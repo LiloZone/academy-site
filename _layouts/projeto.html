@@ -49,9 +49,13 @@
 -->
                     </div>
                     <div class="col-xl-2 text-xl-right socials" data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
+                        <a href="orquestra.html" class="btn sm action-1 f-16"><strong>PT</strong></a>
+                        <a href="orquestra-en.html" class="btn sm action-1 f-16"><strong>EN</strong></a>
+<!--
                         <a href="#" class="link color-heading mr-15 f-18"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="link color-heading mx-15 f-18"><i class="fab fa-facebook-square"></i></a>
                         <a href="#" class="link color-heading ml-15 f-18"><i class="fab fa-instagram"></i></a>
+-->
                     </div>
                 </div>
             </div>
@@ -172,20 +176,20 @@
                         <img src="../i/projetos/orquestra_1.jpg" class="h-full bg" alt="" />
                     </div>
                     <div class="col-xl-5 col-lg-6 col-md-7 pt-100 pb-100 inner">
-                        <h2 class="mb-20 small text-uppercase" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">Orquestra Simbiótica</h2>
-                        <div class="mb-20 f-14 text-uppercase semibold sp-20 color-heading subtitle" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
-                            <i class="mb-20 fas fa-clock"></i>
-                            <p>10/05/20 - 10h às 17h</p>
-                            <p>17/05/20 - 10h às 17h</p>
-                            <p>24/05/20 - 10h às 17h</p>
+                        <h2 class="mb-20 small text-uppercase" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">{{page.nome}}</h2>
+                        <div class="pr-40 mb-30 color-black text-adaptive" data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
+                            {{page.tagline}}
                         </div>
                         <div class="mb-20 f-14 text-uppercase semibold sp-20 color-heading subtitle" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
+                            <i class="mb-20 fas fa-clock"></i>
+                            <p>{{page.data1}}</p>
+                            <p>{{page.data2}}</p>
+                            <p>{{page.data3}}</p>
+                        </div>
+                        <div class="pt-20 mb-20 f-14 text-uppercase semibold sp-20 color-heading subtitle" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
                             <i class="fas fa-map-marker-alt"></i>
                             <a href="#contato" class="link color-heading f-18"><p>LILO.ZONE</p></a>
                             
-                        </div>
-                        <div class="pr-40 color-heading text-adaptive" data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
-                            Seja coautor de uma obra de arte biológico-digital. Uma vivência única que conecta arte, ciência e tecnologia.
                         </div>
                         <div class="mt-20 d-flex flex-wrap images" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
                             <a data-fancybox="ecommerce_23_gallery" href="../i/projetos/orquestra_2.jpg" class="img_link">
@@ -199,7 +203,7 @@
                             </a>
                         </div>
                         <div class="mt-120 d-flex flex-wrap align-items-center buttons" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
-                            <a href="#lotes" class="mt-15 btn action-3 px-20">Compre agora!</a>
+                            <a href="#lotes" class="mt-15 btn action-3 px-20">{{page.botaoCompreAgora}}</a>
                             <!--                            <a href="#" class="mt-15 ml-20 link action-3 f-18 medium">Credit Purchase</a>-->
                         </div>
                     </div>
@@ -212,49 +216,49 @@
             <div class="container px-xl-0">
                 <div class="row justify-content-center">
                     <div class="col-xl-10 col-lg-11">
-                        <h2 class="small text-left text-lg-center text-uppercase" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">Orquestra Simbiótica</h2>
+                        <h2 class="small text-left text-lg-center text-uppercase" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">{{page.nome}}</h2>
                         <div class="row justify-content-center justify-content-lg-between">
                             <div class="col-lg-12 mt-45 block" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
-                                <div class="f-heading medium f-18 title">Descrição</div>
+                                <div class="f-heading medium f-18 title">{{page.descricaoTitulo}}</div>
                                 <div class="mt-10 color-heading text-adaptive">
-                                    <p>Orquestra simbiótica é uma instalação musical interativa onde os sons são gerados por um sistema computacional conectado a microorganismos. Ao longo de três encontros, você será levado a vivenciar procedimentos de laboratório microbiológico e também a adentrar o universo da fabricação digital e da produção computacional de som.</p>
+                                    <p>{{page.d1}}</p>
                                     <br>
-                                    <p>O objetivo do projeto é a construção completa da obra, para posterior exposição em uma Galeria de Arte Digital, onde todos os colaboradores entram como coautores. A ideia foi concebida durante os encontros do grupo de estudos Microbiologia para Artistas do BioLiloLab, o laboratório de biohacking do LILO.ZONE. </p>
+                                    <p>{{page.d2}}</p>
                                     <br>
-                                    <p>O projeto explora o crescimento de microorganismos coletados em estações de metrô de São Paulo, fixando-os em placas de Petri customizadas com fabricação digital e integradas a um sistema de computação que gera música. A estrutura da obra, que servirá de suporte para as placas, também será totalmente projetada e fabricada com corte a laser durante o processo. Cada microorganismo será responsável por um tipo de som e as placas de Petri poderão ser manuseadas pelo público na instalação para compor diferentes sinfonias.</p>
+                                    <p>{{page.d3}}</p>
                                     <br>
-                                    <p>Os encontros em semanas distintas garantem que o tempo biológico seja contabilizado no processo, para que os microorganismos possam se desenvolver em lindas colônias. </p>
+                                    <p>{{page.d4}}</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-12 mt-45 block" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
-                            <div class="f-heading medium f-18 title">Aprendizados</div>
+                            <div class="f-heading medium f-18 title">{{page.aprendizadosTitulo}}</div>
                             <div class="mt-10 color-heading text-adaptive">
                                 <ul>
-                                    <li>Procedimentos de microbiologia para coleta, manuseio e crescimento de microorganismos em laboratório;</li>
-                                    <li>Fixação das colônias de microorganismos para explorações de bioarte;</li>
-                                    <li>Fabricação digital com corte a laser;</li>
-                                    <li>Sistemas de visão computacional para reconhecimento de padrões;</li>
-                                    <li>Softwares e protocolos de música eletrônica.</li>
+                                    <li>{{page.a1}}</li>
+                                    <li>{{page.a2}}</li>
+                                    <li>{{page.a3}}</li>
+                                    <li>{{page.a4}}</li>
+                                    <li>{{page.a5}}</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-lg-12 mt-45 block" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
-                            <div class="f-heading medium f-18 title">Público alvo</div>
+                            <div class="f-heading medium f-18 title">{{page.publicoTitulo}}</div>
                             <div class="mt-10 color-heading text-adaptive">
-                                Artistas e interessados em geral em projetos de intersecção entre arte, ciência e tecnologia. 			
+                                {{page.publicoTexto}}
                             </div>
                         </div>
                         <div class="col-lg-12 mt-45 block" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
-                            <div class="f-heading medium f-18 title">Observações</div>
+                            <div class="f-heading medium f-18 title">{{page.obsTitulo}}</div>
                             <div class="mt-10 color-heading text-adaptive">
                                 <ul>
-                                    <li>Não há necessidade de conhecimentos prévios;</li>
-                                    <li>O uso de jaleco não é obrigatório mas você pode trazer seu próprio jaleco se quiser;</li>
-                                    <li>Recomenda-se o uso de roupas confortáveis durante os encontros;</li>
-                                    <li>Serão manipuladas algumas substâncias químicas de cheiro forte como a resina Arazyn (estireno). Caso você tenha sensibilidade a alguma substância utilizada, é possível não participar nestas etapas do procedimento.</li>
+                                    <li>{{page.obs1}}</li>
+                                    <li>{{page.obs2}}</li>
+                                    <li>{{page.obs3}}</li>
+                                    <li>{{page.obs4}}</li>
                                 </ul>
-                                Após a inscrição, a organização do Lilo.Academy manterá contato por e-mail, informando sobre outras instruções e novidades da pré-produção. 
+                                {{page.obsComum}} 
                             </div>
                         </div>
                     </div>
@@ -267,7 +271,7 @@
             <div class="container px-xl-0">
                 <div class="row justify-content-center">
                     <div class="col-xl-10 col-lg-12 col-md-10" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
-                        <h2 class="mb-35 small">Especialistas</h2>
+                        <h2 class="mb-35 small">{{page.especialistasTitulo}}</h2>
                     </div>
                 </div>
                 <div class="row align-items-stretch justify-content-center justify-content-lg-start">
@@ -277,9 +281,9 @@
                                 <img src="../i/equipe/lina.jpg" class="mb-10 img-fluid align-self-start radius10" alt="" />
                                 <div class="relative ml-30 pb-35 info">
                                     <div class="f-18 medium text-adaptive">
-                                        Artista tecnológica e consultora em inovação, prototipagem e interatividade. Fundadora do LILO.ZONE e do BioLiloLab.
+                                        {{page.especialista1Bio}}
                                     </div>
-                                    <div class="absolute f-14 semibold text-uppercase sp-20 op-3 author">Lina Lopes</div>
+                                    <div class="absolute f-14 semibold text-uppercase sp-20 op-3 author">{{page.especialista1Nome}}</div>
                                 </div>
                             </div>
                         </div>
@@ -290,9 +294,9 @@
                                 <img src="../i/equipe/eduardo.jpg" class="mb-10 img-fluid align-self-start radius10" alt="" />
                                 <div class="relative ml-30 pb-35 info">
                                     <div class="f-18 medium text-adaptive">
-                                        Cientista, especialista em Biohacking e Open Science. Trabalha com Genética Molecular e Reparo de DNA desde os 13 anos de idade.
+                                        {{page.especialista2Bio}}
                                     </div>
-                                    <div class="absolute f-14 semibold text-uppercase sp-20 op-3 author">Eduardo Padilha</div>
+                                    <div class="absolute f-14 semibold text-uppercase sp-20 op-3 author">{{page.especialista2Nome}}</div>
                                 </div>
                             </div>
                         </div>
@@ -303,9 +307,9 @@
                                 <img src="../i/equipe/vinicius.jpg" class="mb-10 img-fluid align-self-start radius10" alt="" />
                                 <div class="relative ml-30 pb-35 info">
                                     <div class="f-18 medium text-adaptive">
-                                        Produtor, compositor, pesquisador e artista sonoro. He has a degree in "Literary Studies".
+                                        {{page.especialista3Bio}}
                                     </div>
-                                    <div class="absolute f-14 semibold text-uppercase sp-20 op-3 author">Vinicius Fernandes</div>
+                                    <div class="absolute f-14 semibold text-uppercase sp-20 op-3 author">{{page.especialista3Nome}}</div>
                                 </div>
                             </div>
                         </div>
@@ -327,21 +331,21 @@
             <div class="container px-xl-0">
                 <div class="row justify-content-center text-center">
                     <div class="col-xl-8 col-lg-10" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
-                        <h2 class="small color-black">Investimento</h2>
+                        <h2 class="small color-black">{{page.lotesTitulo}}</h2>
                     </div>
                     <div class="col-xl-6 col-lg-8 col-md-10" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
                         <div class="mt-25 mb-55 f-22 text-adaptive color-main">
-                            para uma oportunidade única de aprendizado imersivo
+                            {{page.lotesTexto}}
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="mb-70 mb-lg-0 col-lg-4 col-md-7 col-sm-8">
                         <div class="mx-auto mw-370 px-70 pt-60 pb-55 radius10 block">
-                            <div class="f-22 title" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">Lote 1</div>
+                            <div class="f-22 title" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">{{page.lote1Titulo}}</div>
                             <div class="mt-30 mb-40 f-58 d-flex align-items-start price" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
                                 <div class="mt-1 ml-5 f-16">R$</div>
-                                <b>1.100,00</b>
+                                <b>{{page.valor1}}</b>
                                 
                             </div>
                             <ul class="px-0" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
@@ -349,39 +353,39 @@
                                 <li class="mb-10">valor à vista</li>
                             </ul>
                             <div data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
-                                <a href="#" class="mt-15 btn lg action-3">Comprar</a>
+                                <a href="#" class="mt-15 btn lg action-3">{{page.botaoComprar}}</a>
                             </div>
                         </div>
                     </div>
                     <div class="mb-70 mb-lg-0 col-lg-4 col-md-7 col-sm-8">
                         <div class="mx-auto mw-370 px-70 pt-60 pb-55 radius10 block">
-                            <div class="f-22 title" data-aos-duration="600" data-aos="fade-down" data-aos-delay="150">Lote 2</div>
+                            <div class="f-22 title" data-aos-duration="600" data-aos="fade-down" data-aos-delay="150">{{page.lote2Titulo}}</div>
                             <div class="mt-30 mb-40 f-58 d-flex align-items-start price" data-aos-duration="600" data-aos="fade-down" data-aos-delay="150">
                                 <div class="mt-1 ml-5 f-16">R$</div>
-                                <b>1.200,00</b>
+                                <b>{{page.valor2}}</b>
                             </div>
                             <ul class="px-0" data-aos-duration="600" data-aos="fade-down" data-aos-delay="150">
                                 <li class="mb-10">até 29 de fevereiro de 2020</li>
                                 <li class="mb-10">valor à vista</li>
                             </ul>
                             <div data-aos-duration="600" data-aos="fade-down" data-aos-delay="150">
-                                <a href="#" class="mt-15 btn lg action-3">Comprar</a>
+                                <a href="#" class="mt-15 btn lg action-3">{{page.botaoComprar}}</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-7 col-sm-8">
                         <div class="mx-auto mw-370 px-70 pt-60 pb-55 radius10 block">
-                            <div class="f-22 title" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">Lote 3</div>
+                            <div class="f-22 title" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">{{page.lote3Titulo}}</div>
                             <div class="mt-30 mb-40 f-58 d-flex align-items-start price" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
                                 <div class="mt-1 ml-5 f-16">R$</div>
-                                <b>1.300,00</b>
+                                <b>{{page.valor3}}</b>
                             </div>
                             <ul class="px-0" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
                                 <li class="mb-10">a partir de 1 de março de 2020</li>
                                 <li class="mb-10">valor à vista</li>
                             </ul>
                             <div data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
-                                <a href="#" class="mt-15 btn lg action-3">Comprar</a>
+                                <a href="#" class="mt-15 btn lg action-3">{{page.botaoComprar}}</a>
                             </div>
                         </div>
                     </div>
@@ -404,14 +408,14 @@
                         <div class="radius20 pt-55 pb-50 px-20 inner">
                             <div class="row justify-content-center">
                                 <div class="col-xl-10 col-md-8">
-                                    <h2 class="small" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">Hora de saber de onde veio esta ideia de criar uma escola de tecnologia criativa</h2>
+                                    <h2 class="small" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">{{page.videoChamada}}</h2>
                                     <div data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
                                         <a href="https://www.youtube.com/embed/RcTFVcoibI0?rel=0&showinfo=0" target="_blank" data-fancybox="call_to_action_22_fancybox" class="mt-35 mb-40 play relative white"><i class="fas fa-play"></i></a>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-8" data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
-                                    <div class="f-22 text-adaptive">
-                                        Aprendizagem para a vida!
+                                    <div class="f-22 text-adaptive color-black">
+                                        {{page.videoChamada2}}
                                     </div>
                                 </div>
                             </div>
@@ -431,20 +435,20 @@
                             <div class="col-lg-10">
                                 <div class="f-24 bold" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">LILO.Academy</div>
                                 <div class="mt-10 mb-75 f-22 color-heading text-adaptive" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
-                                    Dúvidas, Angústias, Considerações?
+                                    {{page.contatoChamada}}
                                 </div>
                             </div>
                         </div>
                         <div data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
-                            <div class="mb-10 f-14 semibold text-uppercase sp-20 color-heading title">Telefone</div>
+                            <div class="mb-10 f-14 semibold text-uppercase sp-20 color-heading title">{{page.contatoFone}}</div>
                             <a href="tel:+55 11 948 997 972" class="mb-35 link f-42 bold color-main text_big">+55 11 948 997 972</a>
                         </div>
                         <div data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
-                            <div class="mb-10 f-14 semibold text-uppercase sp-20 color-heading title">E-mail</div>
+                            <div class="mb-10 f-14 semibold text-uppercase sp-20 color-heading title">{{page.contatoEmail}}</div>
                             <a href="mailto:academy@lilo.zone" class="mb-35 link f-42 bold color-main text_big">academy@lilo.zone</a>
                         </div>
                         <div data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
-                            <div class="mb-10 f-14 semibold text-uppercase sp-20 color-heading title">Endereço</div>
+                            <div class="mb-10 f-14 semibold text-uppercase sp-20 color-heading title">{{page.contatoEndereco}}</div>
                             <div class="f-42 bold color-main text_big">R. João Moura, 2152 - Pinheiros, São Paulo - SP, 05412-004, Brasil</div>
                         </div>
                     </div>
@@ -468,8 +472,8 @@
                         <a href="#" class="logo link color-white">LILO.Academy</a>
                     </div>
                     <div class="mt-10 mb-10 my-xl-0 col-xl-6 lh-40" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
-                        <a href="https://www.lilo.zone/" target="_blank" class="f-14 text-uppercase sp-20 link color-white mr-15">LILO.ZONE</a>
-                        <a href="http://blog.lilo.zone/" target="_blank" class="f-14 text-uppercase sp-20 link color-white mx-15">Blog</a>
+                        <a href="{{page.linkZone}}" target="_blank" class="f-14 text-uppercase sp-20 link color-white mr-15">LILO.ZONE</a>
+                        <a href="{{page.linkBlog}}" target="_blank" class="f-14 text-uppercase sp-20 link color-white mx-15">Blog</a>
                     </div>
                     <div class="col-lg-3 text-xl-right socials" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
                         <a href="#" class="mr-15 w-40 btn sm border-transparent-white px-0"><i class="fab fa-twitter"></i></a>
