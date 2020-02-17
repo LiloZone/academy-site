@@ -51,10 +51,10 @@
                     <div class="col-xl-2 text-xl-right socials" data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
                         <a href="orquestra.html" class="btn sm action-1 f-16"><strong>PT</strong></a>
                         <a href="orquestra-en.html" class="btn sm action-1 f-16"><strong>EN</strong></a>
-<!--
-                        <a href="#" class="link color-heading mr-15 f-18"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="link color-heading mx-15 f-18"><i class="fab fa-facebook-square"></i></a>
-                        <a href="#" class="link color-heading ml-15 f-18"><i class="fab fa-instagram"></i></a>
+                        <!--
+<a href="#" class="link color-heading mr-15 f-18"><i class="fab fa-twitter"></i></a>
+<a href="#" class="link color-heading mx-15 f-18"><i class="fab fa-facebook-square"></i></a>
+<a href="#" class="link color-heading ml-15 f-18"><i class="fab fa-instagram"></i></a>
 -->
                     </div>
                 </div>
@@ -189,19 +189,21 @@
                         <div class="pt-20 mb-20 f-14 text-uppercase semibold sp-20 color-heading subtitle" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
                             <i class="fas fa-map-marker-alt"></i>
                             <a href="#contato" class="link color-heading f-18"><p>LILO.ZONE</p></a>
-                            
+
                         </div>
-                        <div class="mt-20 d-flex flex-wrap images" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
-                            <a data-fancybox="ecommerce_23_gallery" href="../i/projetos/orquestra_2.jpg" class="img_link">
-                                <img src="../i/projetos/orquestra_2_small.jpg" class="mt-10 radius10 mr-15" alt="" />
-                            </a>
-                            <a data-fancybox="ecommerce_23_gallery" href="../i/projetos/orquestra_3.jpg" class="img_link">
-                                <img src="../i/projetos/orquestra_3_small.jpg" class="mt-10 radius10 mr-15" alt="" />
-                            </a>
-                            <a data-fancybox="ecommerce_23_gallery" href="../i/projetos/orquestra_4.jpg" class="img_link">
-                                <img src="../i/projetos/orquestra_4_small.jpg" class="mt-10 radius10" alt="" />
-                            </a>
-                        </div>
+                        <!--
+<div class="mt-20 d-flex flex-wrap images" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
+<a data-fancybox="ecommerce_23_gallery" href="../i/projetos/orquestra_2.jpg" class="img_link">
+<img src="../i/projetos/orquestra_2_small.jpg" class="mt-10 radius10 mr-15" alt="" />
+</a>
+<a data-fancybox="ecommerce_23_gallery" href="../i/projetos/orquestra_3.jpg" class="img_link">
+<img src="../i/projetos/orquestra_3_small.jpg" class="mt-10 radius10 mr-15" alt="" />
+</a>
+<a data-fancybox="ecommerce_23_gallery" href="../i/projetos/orquestra_4.jpg" class="img_link">
+<img src="../i/projetos/orquestra_4_small.jpg" class="mt-10 radius10" alt="" />
+</a>
+</div>
+-->
                         <div class="mt-120 d-flex flex-wrap align-items-center buttons" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
                             <a href="#lotes" class="mt-15 btn action-3 px-20">{{page.botaoCompreAgora}}</a>
                             <!--                            <a href="#" class="mt-15 ml-20 link action-3 f-18 medium">Credit Purchase</a>-->
@@ -346,17 +348,148 @@
                             <div class="mt-30 mb-40 f-58 d-flex align-items-start price" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
                                 <div class="mt-1 ml-5 f-16">R$</div>
                                 <b>{{page.valor1}}</b>
-                                
+
                             </div>
                             <ul class="px-0" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
                                 <li class="mb-10">{{page.q1}}</li>
-                                <li class="mb-10">valor à vista</li>
+                                <li class="mb-10">{{page.q11}}</li>
                             </ul>
                             <div data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
-                                <a href="#" class="mt-15 btn lg action-3">{{page.botaoComprar}}</a>
+                                <a class="mt-15 btn lg action-3" data-toggle="modal" data-target="#valor1">{{page.botaoComprar}}</a>
                             </div>
                         </div>
                     </div>
+
+                    <div id="valor1" class="modal in" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    {% if page.url contains 'en' %}
+                                    <h4 class="mt-1 ml-5 f-16 color-main">BILLING INFORMATION</h4>
+                                    {% else %}
+                                    <h3 class="mt-1 ml-5 color-main">Ótima escolha!</h3>
+                                    <!--                                    <p class="mt-1 ml-5 f-16 color-main">Preencha seus dados para efetivar a compra.</p>-->
+                                    {% endif %}
+                                </div>
+                                <div class="modal-body mt-1 ml-5 f-16 color-main">
+                                    <div class="container">
+                                        <div class="card mb-3">
+                                            <div class="card-header">
+                                                <h5>Sua compra</h5>
+                                            </div><!-- fim .card-header -->
+
+                                            <div class="card-body">
+                                                <!--                    <img src="../i/projetos/orquestra_1.jpg" alt="Orquestra Simbiótica" class="img-thumbnail mb-3">-->
+                                                <dl>
+                                                    <dt>Produto</dt>
+                                                    <dd>Orquestra Simbiótica</dd>
+
+                                                    <dt>Valor</dt>
+                                                    <dd>R$ 1.100,00</dd>
+                                                </dl>
+                                            </div><!-- fim .card-body -->
+                                        </div><!-- fim .card -->
+                                    </div>
+                                    <div class="container mt-80 mb-30">
+                                        <h3>Dados Pessoais</h3>
+                                    </div>
+                                    <div class="container mb-50">
+                                        <form action="" method="POST">
+                                            <div class="form-group">
+                                                <label for="nome">Nome completo</label>
+                                                <input type="text" class="form-control" id="nome" name="nome">
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xl-6 form-group">
+                                                    <label for="telefone">Telefone</label>
+                                                    <input type="tel" class="form-control" id="telefone" name="telefone">
+                                                </div>
+
+                                                <div class="col-xl-6 form-group">
+                                                    <label for="email">Email</label>
+                                                    <input type="email" class="form-control" id="email" name="email">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xl-6 form-group">
+                                                    <label for="endereco">Endereço</label>
+                                                    <input type="text" class="form-control" id="endereco" name="endereco">
+                                                </div>
+
+                                                <div class="col-xl-3 form-group">
+                                                    <label for="cep">CEP</label>
+                                                    <input type="text" class="form-control" id="cep" name="cep">
+                                                </div>
+                                                <div class="col-xl-3 form-group">
+                                                    <label for="cidade">Cidade</label>
+                                                    <input type="text" class="form-control" id="cidade" name="cidade">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="cpf">CPF</label>
+                                                <input type="text" class="form-control" id="cpf" name="cpf">
+                                            </div>
+                                            <div class="mt-80 mb-30">
+                                                <h3>Forma de Pagamento</h3>
+                                            </div>
+                                            <div class="form-group">
+                                                <select name="forma">
+                                                    <option value="boleto">boleto</option>
+                                                    <option value="cartao">cartão de crédito</option>
+                                                </select>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xl-6 form-group">
+                                                    <label for="cartao">Número do Cartão</label>
+                                                    <input type="text" class="form-control" id="cartao" name="cartao">
+                                                </div>
+
+                                                <div class="col-xl-3 form-group">
+                                                    <label for="cvv">CVV</label>
+                                                    <input type="text" class="form-control" id="cvv" name="cvv">
+                                                </div>
+                                                <div class="col-xl-3 form-group">
+                                                    <label for="validade">Validade</label>
+                                                    <input type="text" class="form-control" id="validade" name="validade">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xl-6 form-group">
+                                                    <label for="cartao">Nome do Titular</label>
+                                                    <input type="text" class="form-control" id="cartao" name="cartao">
+                                                </div>
+
+                                                <div class="col-xl-3 form-group">
+                                                    <label for="cvv">CPF</label>
+                                                    <input type="text" class="form-control" id="cvv" name="cvv">
+                                                </div>
+                                                <div class="col-xl-3 form-group">
+                                                    <label for="validade">Nascimento</label>
+                                                    <input type="text" class="form-control" id="validade" name="validade">
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-xl-6 form-group">
+                                                    <label>Parcelas</label>
+                                                    <select name="parcela" class="border5">
+                                                        <option value="1x">1x</option>
+                                                        <option value="2x">2x</option>
+                                                        <option value="3x">3x</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="btn action-3 mt-1 ml-5 f-16">Comprar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="mb-70 mb-lg-0 col-lg-4 col-md-7 col-sm-8">
                         <div class="mx-auto mw-370 px-70 pt-60 pb-55 radius10 block">
                             <div class="f-22 title" data-aos-duration="600" data-aos="fade-down" data-aos-delay="150">{{page.lote2Titulo}}</div>
@@ -366,7 +499,7 @@
                             </div>
                             <ul class="px-0" data-aos-duration="600" data-aos="fade-down" data-aos-delay="150">
                                 <li class="mb-10">{{page.q2}}</li>
-                                <li class="mb-10">valor à vista</li>
+                                <li class="mb-10">{{page.q21}}</li>
                             </ul>
                             <div data-aos-duration="600" data-aos="fade-down" data-aos-delay="150">
                                 <a href="#" class="mt-15 btn lg action-3">{{page.botaoComprar}}</a>
@@ -382,7 +515,7 @@
                             </div>
                             <ul class="px-0" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
                                 <li class="mb-10">{{page.q3}}</li>
-                                <li class="mb-10">valor à vista</li>
+                                <li class="mb-10">{{page.q31}}</li>
                             </ul>
                             <div data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
                                 <a href="#" class="mt-15 btn lg action-3">{{page.botaoComprar}}</a>
@@ -410,7 +543,7 @@
                                 <div class="col-xl-10 col-md-8">
                                     <h2 class="small" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">{{page.videoChamada}}</h2>
                                     <div data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
-                                        <a href="https://www.youtube.com/embed/RcTFVcoibI0?rel=0&showinfo=0" target="_blank" data-fancybox="call_to_action_22_fancybox" class="mt-35 mb-40 play relative white"><i class="fas fa-play"></i></a>
+                                        <a href="https://www.youtube.com/embed/Jacn7ZkYOnE?rel=0&showinfo=0" target="_blank" data-fancybox="call_to_action_22_fancybox" class="mt-35 mb-40 play relative white"><i class="fas fa-play"></i></a>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-8" data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
@@ -490,7 +623,7 @@
         </div>
         <div class="alert alert-warning alert-dismissible fixed-top alert-form-check-fields" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            Please, fill in required fields.
+            Required field.
         </div>
         <div class="alert alert-danger alert-dismissible fixed-top alert-form-error" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
